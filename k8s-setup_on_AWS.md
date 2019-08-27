@@ -4,7 +4,8 @@
 
 1. Create Ubuntu EC2 instance
 1. install AWSCLI
-   ```sh 
+   ```sh
+    sudo su - 
     curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip
     apt install unzip python
     unzip awscli-bundle.zip
@@ -19,7 +20,7 @@
     sudo mv ./kubectl /usr/local/bin/kubectl
    ```
 1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
-   ```
+   ```sh
       AWSServiceRoleForElasticLoadBalancing
       AmazonEC2FullAccess
       IAMFullAccess
@@ -86,3 +87,7 @@
     ```sh
      kops delete cluster dev.k8s.kamalblog.in --yes
     ```
+1. to delete S3 bucket 
+   ```sh
+    aws s3 rb s3://dev.k8s.kamalblog.in
+   ```
