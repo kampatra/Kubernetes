@@ -2,13 +2,14 @@
 #### Setup Kubernetes (K8s) Cluster on AWS
 
 
-1. Create Ubuntu EC2 instance
+1. Create Amazon Linux EC2 instance
 1. install AWSCLI
    ```sh 
+    sudo su -
     curl https://s3.amazonaws.com/aws-cli/awscli-bundle.zip -o awscli-bundle.zip
-    apt install unzip python
+    yum install unzip python
     unzip awscli-bundle.zip
-    #sudo apt-get install unzip - if you dont have unzip in your system
+    #yum install unzip - if you dont have unzip in your system
     ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
     ```
     
@@ -19,6 +20,13 @@
     sudo mv ./kubectl /usr/local/bin/kubectl
    ```
 1. Create an IAM user/role  with Route53, EC2, IAM and S3 full access
+   ```sh
+   AWSServiceRoleForElasticLoadBalancing
+   AmazonEC2FullAccess
+   IAMFullAccess
+   AmazonS3FullAccess
+   AmazonRoute53FullAccess
+   ```
 1. Attach IAM role to ubuntu server
 
     #### Note: If you create IAM user with programmatic access then provide Access keys. 
