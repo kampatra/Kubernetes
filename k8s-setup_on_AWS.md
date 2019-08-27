@@ -87,7 +87,7 @@
     ```sh
      kops delete cluster dev.k8s.kamalblog.in --yes
     ```
-1. to delete S3 bucket 
+1. To delete S3 bucket 
    ```sh
     aws s3 rb s3://dev.k8s.kamalblog.in
    ```
