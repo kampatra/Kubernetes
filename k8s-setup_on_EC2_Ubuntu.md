@@ -2,7 +2,16 @@
 #### Setup Kubernetes (K8s) Cluster on AWS
 
 
-1. Create Ubuntu EC2 instance
+1. Create Ubuntu EC2 instance - While creating key pair, download the key pair and save in your local machine. This will be required to connect your EC2 instance using Putty
+
+1. Connecting to EC2 instance from Windows mahchine: Generate the private key using PuttyGen tool and connect. For more details follow: 
+   https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console 
+   ```sh
+   Note: user name must be: ubuntu, for example
+   a) hostname: ubuntu@18.223.185.43 
+   b) select Conection -> SSH -> Auth and select the private key file which was generated using PuttyGen tool
+   ```
+   
 1. install AWSCLI
    ```sh
     sudo su - 
