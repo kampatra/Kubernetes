@@ -7,9 +7,9 @@
 1. Connecting to EC2 instance from Windows mahchine using Putty: Generate the private key using PuttyGen tool and connect. For more details follow: 
    https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console 
    ```sh
-   Note: user name must be: ubuntu, for example
+   Note: use default user name: ubuntu, for example
    a) hostname: ubuntu@18.223.185.43 
-   b) select Conection -> SSH -> Auth and select the private key file which was generated using PuttyGen tool
+   b) Navigate Conection -> SSH -> Auth at left side pane of Putty and select the private key file which was generated using PuttyGen tool
    ```
    
 1. install AWSCLI
