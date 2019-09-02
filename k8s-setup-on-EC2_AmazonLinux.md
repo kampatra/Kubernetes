@@ -8,7 +8,7 @@
    https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/putty.html?icmpid=docs_ec2_console 
    ```sh
    Note: use default user name: ec2-user, for example
-   a) hostname: ec2-ser@18.223.185.43 
+   a) hostname: ec2-user@18.223.185.43 
    b) Navigate Conection -> SSH -> Auth from left side pane of putty and select the private key file which was generated using PuttyGen tool
    ```
    
